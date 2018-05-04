@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cake Shop</title>
+</head>
+<body>
+    <header class="header">
+        <img src="" alt="Logo" class="header__logo">
+        <button class="menu-open"><span class="visually-hidden">Открыть / закрыть меню</span></button>
+        <nav class="menu">
+            <ul>
+                <li class="menu__item"><a href="" class="menu__link">Наши торты</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Индивидуальный заказ</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Как заказать</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <p class="header__phone">+7 906 899 92 96</p>
+    </header>
+    <main>
+       <header class="hero-section">
+           <h1 class="heading-primary">Торты <br> на заказ</h1>
+           <p class="handtext">Ручная работа</p>
+           <div class="hero-section__features">
+               <p class="hero-section__feature-item">Натуральные ингредиенты</p>
+               <p class="hero-section__feature-item">Доставка бесплатно при заказе от 2000 рублей*</p>
+           </div>
+           <button class="btn btn--red">Выбрать торт</button>
+       </header>
+        <section class="cakes">
+            <h2 class="heading-secondary">Наши торты</h2>
+            <div class="cake-types">
+                <a class="cake-types__cake-type cake-types__cake-type--classic">
+                    <p class="paragraph">Классические<br>
+                    <span>24 вида</span></p>
+                </a>
+                <a class="cake-types__cake-type cake-types__cake-type--muss">
+                    <p class="paragraph">Муссовые<br>
+                    <span>12 видов</span></p>
+                </a>
+                <a class="cake-types__cake-type cake-types__cake-type--wedding">
+                    <p class="paragraph">Свадебные<br>
+                    <span>20 видов</span></p>
+                </a>
+                <a class="cake-types__cake-type cake-types__cake-type--men">
+                    <p class="paragraph">Мужчинам<br>
+                    <span>12 видов</span></p>
+                </a>
+                <a class="cake-types__cake-type cake-types__cake-type--women">
+                    <p class="paragraph">Женщинам<br>
+                    <span>16 видов</span></p>
+                </a>
+                <a class="cake-types__cake-type cake-types__cake-type--kids">
+                    <p class="paragraph">Детские<br>
+                    <span>18 видов</span></p>
+                </a>
+            </div>
+        </section>
+        <section class="individual">
+            <h2 class="heading-secondary">Индивидуальный заказ</h2>
+            <p class="handtext">Соберите торт в три шага</p>
+            <form action="#" method="post">
+                <div class="individual-step">
+                   <p class="individual-step__title"><span>01</span><br> Выберите начинку</p>
+                    <div class="slider slider--filling">
+                        <button class="slider__btn slider__btn--prev"><span class="visually-hidden">Предыдущая начинка</span></button>
+                        <img src="#" alt="" class="slider__image">
+                        <div class="slider__indicators">
+                           <div class="slider__indicator slider__indicator--current"></div>
+                           <div class="slider__indicator"></div>
+                           <div class="slider__indicator"></div>
+                           <div class="slider__indicator"></div>
+                           <div class="slider__indicator slider__indicator--small"></div>
+                        </div>
+                        <div class="slider__description">
+                            <p class="slider__title">Шоколадный ганаш</p>
+                            <p class="paragraph">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                            <p class="slider__price">1000 руб/кг</p>
+                            <button class="btn btn--red btn--filling" id="choose-filling">Выбрать</button>
+                        </div>
+                        <p class="slider__fillings-number">1/12</p>
+                        <button class="slider__btn slider__btn--next"><span class="visually-hidden">Следующая начинка</span></button>
+                    </div>
+                </div>
+                <div class="individual-step">
+                   <p class="individual-step__title"><span>02</span><br> Размер</p>
+                    <div class="slider slider--size">
+                       <div class="slider__sizes">
+                        <div class="slider__radio-wrapper">
+                              <input type="radio" name="sizes" class="slider__radio slider__radio--size-small" id="cm17" value="17cm">
+                              <label for="cm17">1 кг</label>
+                              <p class="paragraph">(1 кг – 6 персон)</p>
+                          </div>
+                        <div class="slider__radio-wrapper">
+                              <input type="radio" name="sizes" class="slider__radio slider__radio--size-medium" id="cm23" value="23cm">
+                              <label for="cm23">2 кг</label>
+                              <p class="paragraph">(10–12 персон)</p>
+                          </div>
+                        <div class="slider__radio-wrapper">
+                              <input type="radio" name="sizes" class="slider__radio slider__radio--size-big" id="cm25a20" value="25a20cm">
+                              <label for="cm25a20">5 кг</label>
+                              <p class="paragraph">(15–20 персон)</p>
+                          </div>
+                        <div class="slider__radio-wrapper">
+                              <input type="radio" name="sizes" class="slider__radio slider__radio--size-large" id="cm30a25a18" value="30a25a18cm">
+                              <label for="cm30a25a18">8 кг</label>
+                              <p class="paragraph">(25–30 персон)</p>
+                          </div>
+                       </div>
+                        <div class="slider__description">
+                            <button class="btn btn--red btn--size" id="choose-size">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="individual-step">
+                   <p class="individual-step__title"><span>01</span><br> Выберите начинку</p>
+                    <div class="slider slider--filling">
+                        <button class="slider__btn slider__btn--prev"><span class="visually-hidden">Предыдущая начинка</span></button>
+                        <img src="#" alt="" class="slider__image">
+                        <img src="#" alt="" class="slider__image">
+                        <div class="slider__indicators">
+                           <div class="slider__indicator slider__indicator--current"></div>
+                           <div class="slider__indicator"></div>
+                           <div class="slider__indicator"></div>
+                           <div class="slider__indicator"></div>
+                           <div class="slider__indicator slider__indicator--small"></div>
+                        </div>
+                        <div class="slider__description">
+                            <p class="slider__title">Шоколадный ганаш</p>
+                            <p class="paragraph">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                            <p class="slider__price">1000 руб/кг</p>
+                            <button class="btn btn--red btn--filling" id="choose-filling">Выбрать</button>
+                        </div>
+                        <p class="slider__fillings-number">1/12</p>
+                        <button class="slider__btn slider__btn--next"><span class="visually-hidden">Следующая начинка</span></button>
+                    </div>
+                    <h3 class="heading-tertiary">Ваш выбор</h3>
+                    <div class="sum">
+                        <div class="sum__field">
+                            <p class="sum__title">Начинка</p>
+                            <p class="paragraph sum__item">Шоколадный ганаш</p>
+                        </div>
+                        <div class="sum__field"></div>
+                            <p class="sum__title">Начинка</p>
+                            <p class="paragraph sum__item">Шоколадный ганаш</p>
+                        <div class="sum__field">
+                            <p class="sum__title">Начинка</p>
+                            <p class="paragraph sum__item">Шоколадный ганаш</p>
+                        </div>
+                        <input type="submit" value="Заказать торт" class="btn ben--red btn--submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="feedbacks">
+            <h2 class="heading-secondary">Отзывы</h2>
+            <div class="feedback">
+                <button class="feedback__btn feedback__btn--next"><span class="visually-hidden">Предыдущий отзыв</span></button>
+                <img src="#" alt="Фото девушки" class="feedback__photo">
+                <div class="feedback__text">
+                    <p class="paragraph paragraph--big">Мария</p>
+                    <p class="paragraph">юрист, 33 года</p>
+                    <p class="paragraph">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+                    <button class="feedbacks__expand">Развернуть</button>
+                    <span class="feedback__numb">1/26</span>
+                    <button class="feedback__btn feedback__btn--next"><span class="visually-hidden">Предыдущий отзыв</span></button>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>
